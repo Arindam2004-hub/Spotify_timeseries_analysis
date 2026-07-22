@@ -268,7 +268,7 @@ WHERE CROSSOVER_EVENT IN ('Cooling_off', 'Picking up');
 ## 🎯 Key Learnings
 Strengthened hands-on expertise in **advanced SQL window functions (`LAG`, `AVG() OVER`, `ROWS BETWEEN`), CTE-based query architecture, and translating raw time-series data into decision-ready visual insights** — while learning to prioritize statistical validity (sample-size thresholds, edge-case handling) over surface-level metrics.
 
-## 🔑 Skills Demonstrated *(ATS Keywords)*
+## 🔑 Skills Demonstrated
 `SQL` · `MySQL` · `Window Functions` · `CTE (Common Table Expressions)` · `Subqueries` · `Time-Series Analysis` · `Data Aggregation` · `Cohort Analysis` · `Trend Analysis` · `Moving Average` · `Data Cleaning` · `Python` · `Pandas` · `Data Visualization` · `Matplotlib` · `Seaborn` · `Exploratory Data Analysis (EDA)` · `Business Intelligence` · `KPI Analysis` · `User Behavior Analytics` · `Data-Driven Decision Making` · `ETL` · `SQLAlchemy`
 
 ---
