@@ -1,4 +1,5 @@
 <img src="images/Spotify_image.jpeg" alt="Spotify Logo" width="80"/>
+
 # 🎧 Spotify Streaming History — SQL Time-Series Analytics Project
 
 ## 📌 Project Description
