@@ -1,4 +1,4 @@
-![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)
+![Spotify Logo](images/images (3).png)
 # 🎧 Spotify Streaming History — SQL Time-Series Analytics Project
 
 ## 📌 Project Description
