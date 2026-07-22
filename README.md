@@ -32,7 +32,6 @@ Streaming, e-commerce, and product companies rely on **time-series behavioral da
 ## 📊 Analysis, Insights & Visualizations
 
 ### Q1. What are the top 10 most-played artist/album combinations by total listening time?
-**Difficulty:** Easy
 **SQL Technique:** `GROUP BY`, `SUM()`, `ORDER BY`, `LIMIT`
 
 ```sql
@@ -51,7 +50,6 @@ LIMIT 10;
 ---
 
 ### Q2. What is the distribution of streams across platforms?
-**Difficulty:** Easy
 **SQL Technique:** `SUM() OVER()`, ratio-to-total calculation
 
 ```sql
@@ -71,7 +69,6 @@ FROM (
 ---
 
 ### Q3. What percentage of tracks were skipped vs. fully played, and how does this vary by platform?
-**Difficulty:** Easy–Medium
 **SQL Technique:** `CASE WHEN`, `SUM() OVER(PARTITION BY)`
 
 ```sql
@@ -91,7 +88,6 @@ FROM (
 ---
 
 ### Q4. How has monthly listening volume trended over the years?
-**Difficulty:** Medium
 **SQL Technique:** `YEAR()`, `MONTH()`, time-based aggregation
 
 ```sql
@@ -112,7 +108,6 @@ ORDER BY year_, month_num;
 ---
 
 ### Q5. What is the listening pattern by hour-of-day and day-of-week?
-**Difficulty:** Medium
 **SQL Technique:** `HOUR()`, `DAYOFWEEK()`, pivoting for heatmap
 
 ```sql
@@ -132,7 +127,6 @@ ORDER BY day_, time_of_the_day;
 ---
 
 ### Q6. What is the most common "track start reason" and "track end reason" combination?
-**Difficulty:** Medium
 **SQL Technique:** Multi-column `GROUP BY`
 
 ```sql
@@ -150,7 +144,6 @@ LIMIT 10;
 ---
 
 ### Q7. How does skip rate differ by reason_start (autoplay, clickrow, shuffle, etc.)?
-**Difficulty:** Medium
 **SQL Technique:** Conditional aggregation with `CASE WHEN`
 
 ```sql
@@ -170,7 +163,6 @@ ORDER BY skip_rate_pct DESC;
 ---
 
 ### Q8. What is the completion (non-skip) rate by artist?
-**Difficulty:** Medium–Hard
 **SQL Technique:** `HAVING`, sample-size thresholding to avoid statistical noise
 
 ```sql
@@ -194,7 +186,6 @@ LIMIT 20;
 ---
 
 ### Q9. Which artists are trending up the fastest month-over-month (breakout artists) in 2024?
-**Difficulty:** Hard
 **SQL Technique:** `LAG() OVER (PARTITION BY)`, month-over-month % growth calculation
 
 ```sql
@@ -231,7 +222,6 @@ LIMIT 10;
 ---
 
 ### Q10. Rolling 7-day & 30-day moving average of daily listening time, with trend crossover detection
-**Difficulty:** Hard
 **SQL Technique:** `AVG() OVER (ROWS BETWEEN ... PRECEDING)`, `LAG()`, state-comparison logic (gaps & islands)
 
 ```sql
