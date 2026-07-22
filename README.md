@@ -1,4 +1,4 @@
-![Spotify Logo](images/images (3).png)
+![Spotify Logo](images/images(3).jpeg)
 # 🎧 Spotify Streaming History — SQL Time-Series Analytics Project
 
 ## 📌 Project Description
